@@ -14,6 +14,16 @@ Validates all inputs on both the form and the backend (no negative values, credi
 Logs every submitted application into a MySQL database with a timestamp
 Simple, responsive UI with a navy blue theme
 
+
+## Screenshots
+
+**Loan Application Form**
+![Loan Form](screenshots/loan-form.png)
+
+**Assessment Result**
+![Assessment Result](screenshots/assessment-result.png)
+
+
 ## Tech Stack
 
 Backend: Python, Flask
