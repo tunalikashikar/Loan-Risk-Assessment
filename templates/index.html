@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Loan Risk Assessment</h1>
+    <form action="/predict" method="POST">
+        <input type="text" name="applicant_name" placeholder="Applicant Name" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <input type="number" name="income" placeholder="Income" min="0" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <select name="employment_status" required style="width: 100%; padding: 10px; margin: 10px 0;">
+            <option value="" disabled selected>Select Employment Status</option>
+            <option value="Employed">Employed</option>
+            <option value="Self-Employed">Self-Employed</option>
+            <option value="Unemployed">Unemployed</option>
+        </select><br>
+
+        <input type="number" name="credit_score" placeholder="Credit Score" min="300" max="900" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <input type="number" name="existing_loan_count" placeholder="Existing Loan Count" min="0" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <input type="number" name="employment_length" placeholder="Employment Length (years)" min="0" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <input type="number" name="loan_amount_requested" placeholder="Loan Amount Requested" min="0" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <input type="number" name="savings" placeholder="Savings" min="0" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <input type="number" name="dependents" placeholder="No. of Dependents" min="0" required style="width: 100%; padding: 10px; margin: 10px 0;"><br>
+
+        <button type="submit">Analyze Risk</button>
+    </form>
+</div>
+
+</body>
+</html>

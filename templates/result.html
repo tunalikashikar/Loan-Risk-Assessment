@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assessment Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="result-box">
+    <h1>Assessment Result</h1>
+    <h2>Decision: {{ decision }}</h2>
+    <p>Probability of Approval: <strong>{{ probability }}%</strong></p>
+    <p>Risk of Default: <strong>{{ risk }}</strong></p>
+    <a href="/">Assess another applicant</a>
+</div>
+
+</body>
+</html>
