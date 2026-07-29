@@ -3,6 +3,10 @@ import pickle
 import numpy as np
 import mysql.connector
 import logging
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -19,7 +23,7 @@ def establish_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="ranu@123", 
+        password=os.getenv("DB_PASSWORD"), 
         database="loan_db"
     )
 
