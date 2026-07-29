@@ -1,0 +1,10 @@
+{
+  "income": 50000,
+  "employment_status": "Employed",
+  "credit_score": 700,
+  "existing_loan_count": 1,
+  "employment_length": 5,
+  "loan_amount_requested": 200000,
+  "savings": 30000,
+  "dependents": 2
+}
