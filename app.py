@@ -17,7 +17,7 @@ model = pickle.load(open('loan_model.pkl', 'rb'))
 le_property = pickle.load(open('label_encoder_property.pkl', 'rb'))
 
 # Temporary check
-print("DEBUG: Does model have predict_proba?", hasattr(model, "predict_proba"))
+
 
 def establish_db_connection():
     return mysql.connector.connect(
